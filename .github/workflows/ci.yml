@@ -19,8 +19,11 @@ jobs:
         with:
           node-version: '18.x'
 
-      - name: Instalar dependencias
-        run: npm install
+- name: Instalar dependencias
+  run: npm install
 
-      - name: Ejecutar pruebas
-        run: npm test
+- name: Arreglar permisos
+  run: chmod +x node_modules/.bin/jest
+
+- name: Ejecutar pruebas
+  run: npx jest --ci
