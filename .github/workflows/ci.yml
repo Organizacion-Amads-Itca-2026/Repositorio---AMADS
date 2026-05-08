@@ -1,0 +1,25 @@
+name: Integracion Continua CargaSmart
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clonar el repositorio de GitHub al servidor virtual
+        uses: actions/checkout@v3
+
+      - name: Instalar Node.js en el servidor
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+
+      - name: Instalar dependencias del proyecto
+        run: npm ci
+
+      - name: Correr las pruebas automatizadas
+        run: npm test
