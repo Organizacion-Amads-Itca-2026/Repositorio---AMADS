@@ -1,29 +1,17 @@
 name: Integracion Continua CargaSmart
-
 on:
   push:
-    branches: ["main"]
+    branches: [ "main" ]
   pull_request:
-    branches: ["main"]
-
+    branches: [ "main" ]
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Clonar repositorio
-        uses: actions/checkout@v3
-
+      - uses: actions/checkout@v3
       - name: Instalar Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18.x'
-
-- name: Instalar dependencias
-  run: npm install
-
-- name: Arreglar permisos
-  run: chmod +x node_modules/.bin/jest
-
-- name: Ejecutar pruebas
-  run: npx jest --ci
+      - run: npm ci
+      - run: npm test
