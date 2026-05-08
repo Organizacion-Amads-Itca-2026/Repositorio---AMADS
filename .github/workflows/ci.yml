@@ -20,7 +20,10 @@ jobs:
           node-version: '18.x'
 
       - name: Instalar dependencias
-        run: npm install
+  	run: npm install
+
+      - name: Dar permisos a node_modules
+  	run: chmod -R 755 node_modules
 
       - name: Ejecutar pruebas
-        run: npm test
+  	run: npx jest
