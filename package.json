@@ -1,0 +1,24 @@
+{
+  "name": "repositorio---amads",
+  "version": "1.0.0",
+  "description": "Repositorio para AMADS",
+  "main": "index.js",
+"scripts": {
+  "test": "jest"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdcantor007/Repositorio---AMADS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jdcantor007/Repositorio---AMADS/issues"
+  },
+  "homepage": "https://github.com/jdcantor007/Repositorio---AMADS#readme",
+  "devDependencies": {
+    "jest": "^30.4.1"
+  }
+}
