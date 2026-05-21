@@ -19,6 +19,7 @@ class Descuento extends Model
     ];
 
     //descuento
+    //
     protected $casts = [
     'fecha_inicio' => 'datetime',
     'fecha_fin' => 'datetime',
