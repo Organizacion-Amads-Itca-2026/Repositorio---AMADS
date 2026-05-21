@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "src/*": ["*"],
+      "components/*": ["components/*"],
+      "layouts/*": ["layouts/*"],
+      "pages/*": ["pages/*"],
+      "assets/*": ["assets/*"],
+      "boot/*": ["boot/*"]
+    }
+  },
+  "exclude": ["node_modules", ".quasar", "dist"]
+}
