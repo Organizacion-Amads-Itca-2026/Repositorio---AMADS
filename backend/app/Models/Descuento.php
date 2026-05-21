@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+
 use Illuminate\Database\Eloquent\Model;
 
 class Descuento extends Model
@@ -16,6 +17,8 @@ class Descuento extends Model
           "fecha_fin", 
           "estado"
     ];
+
+    //descuento
     protected $casts = [
     'fecha_inicio' => 'datetime',
     'fecha_fin' => 'datetime',
