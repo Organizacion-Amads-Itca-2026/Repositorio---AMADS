@@ -1,4 +1,4 @@
-# Nombre del Proyecto: Ventry Online
+# Nombre del Proyecto: Ventry
 
 ## Metodología Ágile Seleccionada
 * **Metodología:** SCRUM
@@ -12,7 +12,6 @@
 * **Framework Backend:** Laravel
 * **Base de Datos:** MySQL
 * **Frontend:** Quasar, VUE
-
 
 ## Integrantes y Roles Desempeñados
 

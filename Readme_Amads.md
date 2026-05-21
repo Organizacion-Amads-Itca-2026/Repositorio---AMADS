@@ -1,4 +1,4 @@
-# Nombre del Proyecto: Ventry Online
+# Nombre del Proyecto: Ventry 
 
 ## Metodología Ágile Seleccionada
 * **Metodología:** SCRUM
